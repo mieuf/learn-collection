@@ -6,7 +6,7 @@ package mieuf.org.base.dell;
 public class TestMy {
     public static void main(String[] args) {
         System.out.println("hello world ");
-
+//        SingletonDemo instance = SingletonDemo.instance.whateverMethod();
     }
 
     public class A{
