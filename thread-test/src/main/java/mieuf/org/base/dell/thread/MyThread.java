@@ -32,7 +32,7 @@ public class MyThread {
     static ExecutorService service = Executors.newSingleThreadExecutor();
 
     public static void main(String[] args) throws InterruptedException {
-
+//        Unsafe
         System.out.println("hello world");
         thread1.start();
 //        // join()主线程等子线程执行完，再执行

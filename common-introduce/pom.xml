@@ -11,6 +11,9 @@
   <modules>
     <module>../common-utils</module>
     <module>../data-structure-source</module>
+      <module>../mq-collection</module>
+    <module>../web-collection</module>
+      <module>../algorithm-collection</module>
   </modules>
 
   <name>common-introduce</name>
