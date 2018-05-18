@@ -55,6 +55,18 @@
     </build>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.0.6.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.0.6.RELEASE</version>
+        </dependency>
         <!--dependency>
       <groupId>mieuf.org.base.dell</groupId>
       <artifactId>[the artifact id of the block to be mounted]</artifactId>
