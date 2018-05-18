@@ -10,10 +10,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>common-utils</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>algorithm</artifactId>
 
-    <name>common-utils</name>
+    <name>algorithm</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -25,20 +24,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>portlet-api</groupId>
-            <artifactId>portlet-api</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>taglibs</groupId>
-            <artifactId>standard</artifactId>
-            <version>1.0.4</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -49,7 +38,7 @@
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.0.0</version>
                 </plugin>
-                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.0.2</version>
@@ -63,8 +52,8 @@
                     <version>2.20.1</version>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>

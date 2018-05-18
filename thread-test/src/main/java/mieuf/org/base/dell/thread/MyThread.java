@@ -9,6 +9,7 @@ import java.util.concurrent.Executors;
  * TODO -----
  */
 public class MyThread {
+    
     static Thread thread1 = new Thread(){
         @Override
         public void run(){
@@ -46,5 +47,6 @@ public class MyThread {
         service.submit(thread2);
         service.submit(thread3);
         service.shutdown();
+        service.getClass();
     }
 }
