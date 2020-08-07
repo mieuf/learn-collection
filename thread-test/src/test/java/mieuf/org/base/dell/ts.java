@@ -1,4 +1,4 @@
-package org.base.mvc.thr;
+package mieuf.org.base.dell;
 
 import sun.misc.Unsafe;
 
@@ -18,14 +18,14 @@ public class ts {
         Unsafe unsafe = getUnsafeInstance();
 
         Field appleField = ts.class.getDeclaredField("apple");
-        System.out.println("Location of Apple: " + unsafe.staticFieldOffset(appleField));
+        System.out.println("Location of Apple: " + unsafe.staticFieldOffset(appleField));  //apple在类实例中的偏移量
 
         Field orangeField = ts.class.getDeclaredField("orange");
         System.out.println("Location of Orange: " + unsafe.objectFieldOffset(orangeField));
 
 
-        System.out.println(orangeField.getInt(new ts()));
-        System.out.println(appleField.getInt(new ts()));
+        System.out.println(orangeField.getInt(new ts())); 
+        System.out.println(appleField.getInt(new ts())); //apple在类实例中的值
     }
 
     private static Unsafe getUnsafeInstance() throws SecurityException, NoSuchFieldException, IllegalArgumentException,
